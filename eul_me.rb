@@ -1,5 +1,5 @@
 def array_sum(value)
-value.inject(0) {|sum, element| sum += element}
+value.inject(0) {|sum, element| sum += element.to_i}
 end
 
 def conv_to_array(value)
