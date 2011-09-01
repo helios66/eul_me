@@ -1,5 +1,4 @@
 =begin
-ans :
 ans = 4075
 ran for 1.937513 seconds
 =end
@@ -22,6 +21,6 @@ end
 n+=1
 end
 puts _tet.size, " "
-teta = _tet.uniq
-puts teta.size, " "
+#teta = _tet.uniq
+#puts teta.size, " "
 puts "ran for : #{Time.now - start} seconds"
