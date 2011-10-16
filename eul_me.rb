@@ -27,7 +27,8 @@ def factorial(n)
 value = (1..n).to_a
 array_mul(value)
 end
-
+#commented this because i haven't been using it
+=begin
 def quad_soln(a, b, c)
 #would only work for real roots.
 #roots which are integers.
@@ -37,7 +38,7 @@ x2 = (-b.to_f - (nroot(_test.to_f, 2)))/(2*a.to_f)
 puts "x1 : #{x1} \n"
 puts "x2 : #{x2} \n"
 end
-
+=end
 def combination(n, r)
 #defining and calculating the combination of two given #numbers
 (factorial(n))/(factorial(r)*factorial(n-r))
