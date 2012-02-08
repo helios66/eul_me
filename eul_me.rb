@@ -66,7 +66,7 @@ elsif num == 0 or num == 0.0
 md = 0
 end
 end
-
+=begin
 def isprime(n)
 $num = []
 for i in (1..n).to_a do
@@ -79,5 +79,22 @@ if $num.size == 2 && $num == [1, n]
 return true
 else
 return false
+end
+end
+=end
+def isprime(x)
+x = mod(x);
+z = ((nroot(x, 2)).to_i) + 1;
+if x < 2 then
+return false;
+elsif x == 2 then
+return true;
+elsif not x & 1 then
+return false;
+end
+for v in 3..z do
+if x%v == 0 then
+return false;
+end
 end
 end
