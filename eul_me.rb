@@ -66,7 +66,8 @@ elsif num == 0 or num == 0.0
 md = 0
 end
 end
-=begin
+
+##my version of a prime checker, takes up time
 def isprime(n)
 $num = []
 for i in (1..n).to_a do
@@ -81,20 +82,32 @@ else
 return false
 end
 end
-=end
-def isprime(x)
+
+
+def isprimefast(x)
 x = mod(x);
 z = ((nroot(x, 2)).to_i) + 1;
-if x < 2 then
-return false;
-elsif x == 2 then
-return true;
-elsif not x & 1 then
-return false;
+	if x < 2 then
+		return false;
+	elsif x == 2 then
+		return true;
+	elsif not x & 1 then
+		return false;
+	end
+	for v in 3..z do
+		if x%v == 0 then
+			return false;
+		end
+	end
 end
-for v in 3..z do
-if x%v == 0 then
-return false;
-end
-end
+
+def mysqrt(x)
+  return 0 if x==0 
+  m=x
+  p=x
+  loop do
+    r=(m+p/m)/2
+    return m if m<=r
+    m=r
+  end
 end

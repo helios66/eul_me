@@ -1,3 +1,4 @@
 require "eul_me.rb"
 
-puts ischeckprime(99);
+puts isprimefast(99), "";
+puts isprime(99);
